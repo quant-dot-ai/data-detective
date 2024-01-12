@@ -1,0 +1,28 @@
+---
+import { aboutmeDescription } from "../config";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Pritesh Singh - About"
+  description="I am a Business Analyst and Data Scientist with a robust background in leveraging data to drive strategic decision-making and innovation. My experience at leading firms like Disney+ and PhonePe has honed my skills in financial analytics, project management, and developing user-centric technology solutions. With a Master's degree in Business Analytics from The University of Texas at Austin, I possess a deep understanding of advanced machine learning, financial modeling, and optimization techniques. I have a proven track record of managing critical projects, such as leading the successful migration of video assets at Disney+ and developing a Chrome extension to simplify legal documents for users. My approach blends technical expertise with a keen sense of business acumen, enabling me to translate complex data into actionable insights. I am passionate about using data to solve real-world problems and am always eager to take on new challenges that drive business growth and enhance user experience."
+>
+  <main
+    class="relative flex flex-col text-left py-4 px-5 md:px-20 min-h-screen w-full"
+  >
+    <div class="max-w-2xl z-40">
+      <header
+        class="header-container flex items-center overflow-hidden mt-20 lg:mt-56"
+      >
+        <h1 class="text-white text-5xl font-bold whitespace-nowrap">
+          About me
+        </h1>
+      </header>
+      <div class="overflow-hidden">
+        <p class="text-neutral-400 mt-6 max-w-2xl">
+         {aboutmeDescription}
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>

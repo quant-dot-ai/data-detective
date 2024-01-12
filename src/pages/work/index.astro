@@ -1,0 +1,24 @@
+---
+import Workslist from "../../components/Workslist";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+  title="Pritesh Singh - Work"
+  description="I am a data scientist with a passion for building products that make a difference. I have worked on a variety of projects ranging from building a recommendation engine for a video streaming service to building a machine learning model to predict the price of insurance premiums."
+>
+  <main
+    class="relative flex flex-col text-left py-4 px-5 md:px-20 min-h-screen max-w-6xl"
+  >
+    <div class="max-w-4xl z-40">
+      <header
+        class="header-container flex items-center mt-20 lg:mt-56"
+      >
+        <h1 class="text-white text-5xl font-bold whitespace-nowrap">My work</h1>
+      </header>
+      <div class="flex flex-col gap-4 mt-6 mb-12 lg:mb-6 h-full w-full">
+        <Workslist client:load />
+      </div>
+    </div>
+  </main>
+</Layout>
