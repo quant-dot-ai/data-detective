@@ -4,7 +4,7 @@ Simple portfolio made in `Astro` and `Solidjs`
 
 [Portfolio link](https://pritesh-singh.netlify.app)
 
-<img src="https://imgur.com/egcbBwc" width="80%" />
+<img src="https://imgur.com/egcbBwc.png" width="80%" />
 
 ## Features
 
