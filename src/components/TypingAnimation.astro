@@ -9,7 +9,7 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-      const words = ["Machine Learning", "Generative AI", "Curious", "Innovator"];
+      const words = ["GenAI enthusiast", "Data Detective", "Creator", "Innovator"];
       const typingSpeed = 200;
       const deleteSpeed = 100;
       const delayBetweenWords = 2000;
@@ -21,6 +21,7 @@
   
       function type() {
         const currentWord = words[wordIndex];
+  
         if (isDeleting) {
           text = currentWord.substring(0, text.length - 1);
         } else {
@@ -29,14 +30,17 @@
   
         textElement.textContent = text;
   
+        let typeSpeed = isDeleting ? deleteSpeed : typingSpeed;
+  
         if (!isDeleting && text === currentWord) {
-          setTimeout(() => isDeleting = true, delayBetweenWords);
+          typeSpeed = delayBetweenWords;
+          isDeleting = true;
         } else if (isDeleting && text === '') {
           isDeleting = false;
           wordIndex = (wordIndex + 1) % words.length;
         }
   
-        setTimeout(type, isDeleting ? deleteSpeed : typingSpeed);
+        setTimeout(type, typeSpeed);
       }
   
       type();
