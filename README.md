@@ -48,4 +48,7 @@ In order to disable a pages you need to prefix the file name with an `_` (e.g.: 
 ## Author
 
 - Pritesh Singh
-Inspired by - Gianmarco - https://github.com/Ladvace
+Inspired by
+
+
+- Gianmarco - https://github.com/Ladvace
