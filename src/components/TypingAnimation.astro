@@ -1,0 +1,67 @@
+---
+// TypingAnimation.astro
+// No JavaScript logic in the frontmatter for this component
+---
+
+<div class="typing-animation">
+    <span id="typing-text"></span><span class="cursor"></span>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const words = ["Machine Learning", "Generative AI", "Curious", "Innovator"];
+      const typingSpeed = 200;
+      const deleteSpeed = 100;
+      const delayBetweenWords = 2000;
+  
+      const textElement = document.getElementById('typing-text');
+      let text = '';
+      let wordIndex = 0;
+      let isDeleting = false;
+  
+      function type() {
+        const currentWord = words[wordIndex];
+        if (isDeleting) {
+          text = currentWord.substring(0, text.length - 1);
+        } else {
+          text = currentWord.substring(0, text.length + 1);
+        }
+  
+        textElement.textContent = text;
+  
+        if (!isDeleting && text === currentWord) {
+          setTimeout(() => isDeleting = true, delayBetweenWords);
+        } else if (isDeleting && text === '') {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+  
+        setTimeout(type, isDeleting ? deleteSpeed : typingSpeed);
+      }
+  
+      type();
+    });
+  </script>
+  
+  <style>
+  .typing-animation {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    white-space: nowrap;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 1ch;
+    background-color: currentColor;
+    margin-left: 2px;
+    animation: blink 1s steps(2) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      background-color: transparent;
+    }
+  }
+  </style>
+  
