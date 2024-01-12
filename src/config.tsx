@@ -30,10 +30,10 @@ export const works: Work[] = [
         <ul class="list-disc list-inside">
           <li>Defined the KPIs and the schema for all analytics events for the video player team. </li>
           <li>Innovated a CDN performance scoring system, enhancing streaming quality by 15%</li>
-          <li>Conduct market research and competitor analysis</li>
-          <li>Create engaging content for marketing materials</li>
-          <li>Manage and optimize digital advertising campaigns</li>
-          <li>Monitor and analyze marketing metrics</li>
+          <li>Pioneered A/B testing for the video player, significantly decreasing failure rates from 6% to less than 1%.</li>
+          <li>Implemented real-time alert systems, reducing failure detection times by approximately 50%.</li>
+          <li>Designed dashboard templates for monitoring live-stream content, halving the issue triaging time.</li>
+          <li>Enhanced team data literacy and established data SOPs through regular technical workshops.</li>
         </ul>
       </div>
     ),
@@ -44,7 +44,7 @@ export const works: Work[] = [
     title: "PhonePe (Walmart Labs)", 
     description: (
       <div>
-        <h2>PhonePe is a FinTech company leading the world in P2P transactions</h2>
+        <h2>PhonePe is the biggest FinTech company in India. It is the world in P2P transactions</h2>
         <h2>Job Title: Product Analyst</h2>
         <h4>Job Description:</h4>
         <p>
@@ -53,12 +53,9 @@ export const works: Work[] = [
         <br />
         <h4 class="font-bold">Responsibilities:</h4>
         <ul class="list-disc list-inside">
-          <li>Defined the KPIs and the schema for all analytics events for the video player team. </li>
-          <li>Innovated a CDN performance scoring system, enhancing streaming quality by 15%</li>
-          <li>Conduct market research and competitor analysis</li>
-          <li>Create engaging content for marketing materials</li>
-          <li>Manage and optimize digital advertising campaigns</li>
-          <li>Monitor and analyze marketing metrics</li>
+          <li>Utilized quantitative research methods and data-driven strategies to analyze digital gold sales patterns leading to a 60% increase in digital gold sales. </li>
+          <li>Engineered and optimized QlikView dashboards and Airflow (DAGs) to achieve a significant reduction in runtime by over 50%, enhancing system efficiency and user experience.</li>
+          <li>Automated QlikView processes for Payment Gateway team, saving 3 man-hours weekly during my internship.</li>
         </ul>
       </div>
     ),
@@ -93,13 +90,17 @@ export const routes = [
     slug: "/",
   },
   {
-    title: "Work",
+    title: "CV",
     slug: "/work",
   },
-  {
-    title: "Blog",
-    slug: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   slug: "/blog",
+  // },
+  // {
+  //   title: "Projects",
+  //   slug: "/",
+  // },
   {
     title: "About",
     slug: "/about",
