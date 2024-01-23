@@ -9,11 +9,12 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-      const words = ["GenAI enthusiast", "Data Detective", "Creator", "Innovator"];
-      const typingSpeed = 200;
-      const deleteSpeed = 100;
-      const delayBetweenWords = 2000;
+      const words = ["Data Detective", "Guitarist", "Curious", "Machine Learning"];
+      const typingSpeed = 80;
+      const deleteSpeed = 75;
+      const delayBetweenWords = 1000;
   
+    //   var textElement = "Data Detective"
       const textElement = document.getElementById('typing-text');
       let text = '';
       let wordIndex = 0;
@@ -28,7 +29,9 @@
           text = currentWord.substring(0, text.length + 1);
         }
   
-        textElement.textContent = text;
+        if (textElement) {
+            textElement.textContent = text;
+        }
   
         let typeSpeed = isDeleting ? deleteSpeed : typingSpeed;
   
@@ -50,16 +53,16 @@
   <style>
   .typing-animation {
     font-family: 'Courier New', monospace;
-    font-size: 24px;
+    font-size: 32px;
     white-space: nowrap;
   }
   
   .cursor {
     display: inline-block;
-    width: 1ch;
-    background-color: #FFFFFF;
+    width: 40ch;
+    background-color:whitesmoke;
     margin-left: 2px;
-    animation: blink 1s steps(2) infinite;
+    animation: blink 0.1s steps(2) infinite;
   }
   
   @keyframes blink {
