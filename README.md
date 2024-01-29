@@ -33,8 +33,8 @@ In order to disable a pages you need to prefix the file name with an `_` (e.g.: 
 ├── src/
 │   ├── components/
 │   ├── content/
-│   │   |  blog/
-│   │   |    └── some-blog-posts.md
+│   │   |  blog/ (TBA)
+│   │   |    └── some-blog-posts.md (TBA)
 │   │   └── config.ts
 │   ├── layouts/
 │   └── pages/
